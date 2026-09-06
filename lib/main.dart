@@ -381,8 +381,7 @@ class ProjectsPage extends StatelessWidget {
 
                   _projectCard(
                     icon: Icons.directions_car,
-                    title: 'DriveSafe AI',
-                    subtitle: 'Driver Monitoring System',
+                    title: 'Driver Monitoring System',
                     description:
                         'An AI-based system that monitors driver '
                         'behavior and detects signs of drowsiness '
@@ -399,8 +398,7 @@ class ProjectsPage extends StatelessWidget {
                  
                   _projectCard(
                     icon: Icons.school_outlined,
-                    title: 'UniHive',
-                    subtitle: 'College Resource Platform',
+                    title: 'College Resource Platform',
                     description:
                         'A centralized platform that brings '
                         'academic resources, events, discussions '
@@ -421,8 +419,7 @@ class ProjectsPage extends StatelessWidget {
 
                   _projectCard(
                     icon: Icons.psychology_outlined,
-                    title: 'InsightFlow',
-                    subtitle: 'Human Activity Recognition',
+                    title: 'Human Activity Recognition',
                     description:
                         'An AI-powered system that recognizes '
                         'multiple everyday human activities '
@@ -476,14 +473,10 @@ class ProjectsPage extends StatelessWidget {
     );
   }
 
-  // ============================================================
-  // PROJECT CARD
-  // ============================================================
 
   Widget _projectCard({
     required IconData icon,
     required String title,
-    required String subtitle,
     required String description,
     required List<String> technologies,
   }) {
@@ -505,10 +498,6 @@ class ProjectsPage extends StatelessWidget {
       child: Row(
         children: [
 
-          // ==================================================
-          // LEFT ICON SECTION
-          // ==================================================
-
           Container(
             width: 120,
 
@@ -529,9 +518,7 @@ class ProjectsPage extends StatelessWidget {
             ),
           ),
 
-          // ==================================================
-          // RIGHT CONTENT SECTION
-          // ==================================================
+       
 
           Expanded(
             child: Padding(
@@ -550,20 +537,6 @@ class ProjectsPage extends StatelessWidget {
                       color: Colors.indigo,
                     ),
                   ),
-
-                  const SizedBox(height: 4),
-
-                  // Subtitle
-                  Text(
-                    subtitle,
-                    style: const TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.grey,
-                    ),
-                  ),
-
-                  const SizedBox(height: 12),
 
                   // Description
                   Text(
@@ -595,9 +568,7 @@ class ProjectsPage extends StatelessWidget {
     );
   }
 
-  // ============================================================
-  // TECHNOLOGY CHIP
-  // ============================================================
+
 
   Widget _techChip(String text) {
     return Container(
