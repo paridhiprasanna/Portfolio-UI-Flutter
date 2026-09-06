@@ -435,21 +435,20 @@ class ProjectsPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-
-_projectCard(
-  icon: Icons.verified_outlined,
-  title: 'Smart Content Analysis',
-  description:
-      'An AI-powered system that analyzes online content, '
-      'detects potentially misleading information, and provides '
-      'evidence-based verification using NLP and retrieval techniques.',
-  technologies: [
-    'Python',
-    'FastAPI',
-    'Transformers',
-    'FAISS',
-  ],
-),
+          _projectCard(
+            icon: Icons.verified_outlined,
+            title: 'Smart Content Analysis',
+            description:
+            'An AI-powered system that analyzes online content, '
+            'detects potentially misleading information, and provides '
+            'evidence-based verification using NLP and retrieval techniques.',
+            technologies: [
+              'Python',
+              'FastAPI',
+              'Transformers',
+              'FAISS',
+              ],
+              ),
           // ==================================================
           // BACK TO HOME
           // ==================================================
