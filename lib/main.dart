@@ -336,7 +336,6 @@ class AboutPage extends StatelessWidget {
   }
 }
 
-
 // ============================================================
 // PROJECTS PAGE
 // ============================================================
@@ -376,7 +375,7 @@ class ProjectsPage extends StatelessWidget {
                 children: [
 
                   // ==================================================
-                  // PROJECT 1 - DRIVESAFE AI
+                  // PROJECT 1
                   // ==================================================
 
                   _projectCard(
@@ -395,7 +394,10 @@ class ProjectsPage extends StatelessWidget {
 
                   const SizedBox(height: 20),
 
-                 
+                  // ==================================================
+                  // PROJECT 2
+                  // ==================================================
+
                   _projectCard(
                     icon: Icons.school_outlined,
                     title: 'College Resource Platform',
@@ -414,7 +416,7 @@ class ProjectsPage extends StatelessWidget {
                   const SizedBox(height: 20),
 
                   // ==================================================
-                  // PROJECT 3 - INSIGHTFLOW
+                  // PROJECT 3
                   // ==================================================
 
                   _projectCard(
@@ -430,25 +432,35 @@ class ProjectsPage extends StatelessWidget {
                       'MobileNetV2',
                     ],
                   ),
+
+                  const SizedBox(height: 20),
+
+                  // ==================================================
+                  // PROJECT 4
+                  // ==================================================
+
+                  _projectCard(
+                    icon: Icons.verified_outlined,
+                    title: 'Smart Content Analysis',
+                    description:
+                        'An AI-powered system that analyzes online '
+                        'content, detects potentially misleading '
+                        'information, and provides evidence-based '
+                        'verification using NLP and retrieval techniques.',
+                    technologies: [
+                      'Python',
+                      'FastAPI',
+                      'Transformers',
+                      'FAISS',
+                    ],
+                  ),
+
+                  const SizedBox(height: 20),
                 ],
               ),
             ),
           ),
-          const SizedBox(height: 20),
-          _projectCard(
-            icon: Icons.verified_outlined,
-            title: 'Smart Content Analysis',
-            description:
-            'An AI-powered system that analyzes online content, '
-            'detects potentially misleading information, and provides '
-            'evidence-based verification using NLP and retrieval techniques.',
-            technologies: [
-              'Python',
-              'FastAPI',
-              'Transformers',
-              'FAISS',
-              ],
-              ),
+
           // ==================================================
           // BACK TO HOME
           // ==================================================
@@ -487,6 +499,9 @@ class ProjectsPage extends StatelessWidget {
     );
   }
 
+  // ============================================================
+  // PROJECT CARD
+  // ============================================================
 
   Widget _projectCard({
     required IconData icon,
@@ -512,6 +527,7 @@ class ProjectsPage extends StatelessWidget {
       child: Row(
         children: [
 
+          // Left Icon Section
           Container(
             width: 120,
 
@@ -532,8 +548,7 @@ class ProjectsPage extends StatelessWidget {
             ),
           ),
 
-       
-
+          // Right Content Section
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(22),
@@ -551,6 +566,8 @@ class ProjectsPage extends StatelessWidget {
                       color: Colors.indigo,
                     ),
                   ),
+
+                  const SizedBox(height: 8),
 
                   // Description
                   Text(
@@ -582,7 +599,9 @@ class ProjectsPage extends StatelessWidget {
     );
   }
 
-
+  // ============================================================
+  // TECHNOLOGY CHIP
+  // ============================================================
 
   Widget _techChip(String text) {
     return Container(
